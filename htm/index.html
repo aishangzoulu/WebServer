@@ -1,0 +1,28 @@
+<script type="text/javascript"> 
+	function loginclick(){ 
+		if (document.getElementById("LoginID").value==""){ 
+			alert("用户名不能为空"); 
+			return false; 
+		} 
+		if (document.getElementById("Passwd").value==""){ 
+			alert("密码不能为空"); 
+			return false; 
+		} 
+
+		document.getElementById("login_form1").submit(); 
+		return true; 
+	}
+ 
+</script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<form id="login_form1" name="form1" method="post" action="login.html"> 
+
+   <p class="c19499d f14px"> 
+ 	 <strong>用户名：</strong> <input id="LoginID" name="LoginID" type="text" size="8" maxlength="20" class="textarea-2"/>   
+  	<strong>密码：</strong> <input id="Passwd" name="Passwd" type="password" size="8" maxlength="20" onkeydown="javascript:if (event.keyCode==13){loginclick();}"   	class="textarea-2"/> 
+	<input type="button" value="登录" class="btn-2" onclick="javascript:loginclick();"/> 
+   </p> 
+
+</form> 
+
