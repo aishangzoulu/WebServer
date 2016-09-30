@@ -1,18 +1,18 @@
-package com.webserver.demo.servlet;
+package com.webserver.core.servlet;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
 import javax.servlet.http.HttpServlet;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Container {
 
-	public final static String pack = "com.webserver.core.";
+	public final static String pack = "com.webserver.core.servlet.";
 
 	private Map<String, HttpServlet> servletMap = new HashMap<String, HttpServlet>();
 
@@ -49,10 +49,6 @@ public class Container {
 	public HttpServlet getServlet(String urlPattern) {
 		return servletMap.get(urlPattern);
 
-	}
-
-	public static void main(String[] args) {
-		new Container();
 	}
 
 }

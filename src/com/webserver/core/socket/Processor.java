@@ -1,4 +1,4 @@
-package com.webserver.demo.socket;
+package com.webserver.core.socket;
 
 import java.io.BufferedReader;
 import java.io.File;

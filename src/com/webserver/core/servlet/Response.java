@@ -1,4 +1,4 @@
-package com.webserver.demo.servlet;
+package com.webserver.core.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
